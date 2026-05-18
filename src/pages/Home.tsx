@@ -58,7 +58,7 @@ const NetworkLogos = {
     <div className="font-bebas text-[#E50914] font-[900] text-[32px] tracking-[4px]">NETFLIX</div>
   ),
   BeIN: () => (
-    <div className="flex flex-col items-center bg-[#C8102E] px-4 py-1 rounded-full shadow-lg">
+    <div className="flex flex-col items-center bg-[#601ad9] px-4 py-1 rounded-full shadow-lg">
       <div className="flex items-center">
         <span className="text-white font-black text-xl">be</span>
         <span className="text-[#E50914] font-black text-xl italic ml-0.5">IN</span>
