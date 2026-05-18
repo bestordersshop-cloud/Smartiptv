@@ -61,7 +61,7 @@ const NetworkLogos = {
     <div className="flex flex-col items-center bg-[#601ad9] px-4 py-1 rounded-full shadow-lg">
       <div className="flex items-center">
         <span className="text-white font-black text-xl">be</span>
-        <span className="text-[#E50914] font-black text-xl italic ml-0.5">IN</span>
+        <span className="text-[#ffffff] font-black text-xl italic ml-0.5">IN</span>
       </div>
       <span className="text-white font-bold text-[8px] tracking-[2px] -mt-1">SPORTS</span>
     </div>
