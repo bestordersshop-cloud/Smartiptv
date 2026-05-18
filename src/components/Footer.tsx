@@ -37,6 +37,7 @@ export default function Footer() {
             <h4 className="font-bebas text-xl mb-6 tracking-wide">Support</h4>
             <ul className="space-y-4 text-sm text-white/40">
               <li><Link to="/faq" className="hover:text-brand transition-colors">FAQ</Link></li>
+              <li><Link to="/free-trial" className="hover:text-brand transition-colors">Free Trial</Link></li>
               <li><a href="#" className="hover:text-brand transition-colors">Setup Guides</a></li>
               <li><a href="#" className="hover:text-brand transition-colors">WhatsApp Support</a></li>
               <li><a href="#" className="hover:text-brand transition-colors">System Status</a></li>

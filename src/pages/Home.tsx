@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { 
   Tv, 
   Smartphone, 
@@ -354,9 +355,9 @@ export default function Home() {
                 <a href="#plans" className="w-full sm:w-auto bg-brand text-white px-9 py-4 rounded-[4px] font-bold text-[15px] tracking-[2px] hover:bg-brand/90 transition-all text-center">
                   SEE OUR PLANS
                 </a>
-                <button className="w-full sm:w-auto border-2 border-white text-white px-9 py-4 rounded-[4px] font-bold text-[15px] tracking-[1px] hover:bg-white hover:text-black transition-all flex items-center justify-center gap-2">
+                <Link to="/free-trial" className="w-full sm:w-auto border-2 border-white text-white px-9 py-4 rounded-[4px] font-bold text-[15px] tracking-[1px] hover:bg-white hover:text-black transition-all flex items-center justify-center gap-2">
                   ▶ WATCH FREE DEMO
-                </button>
+                </Link>
               </div>
             </motion.div>
           </div>

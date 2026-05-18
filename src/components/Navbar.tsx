@@ -31,9 +31,9 @@ export default function Navbar() {
         <Link to="/about" className="hover:text-brand transition-colors">About</Link>
       </div>
 
-      <button className="bg-brand hover:bg-brand/90 text-white px-6 py-2 rounded-full font-bold text-sm transition-transform active:scale-95 shadow-[0_0_20px_rgba(229,9,20,0.3)]">
+      <Link to="/free-trial" className="bg-brand hover:bg-brand/90 text-white px-6 py-2 rounded-full font-bold text-sm transition-transform active:scale-95 shadow-[0_0_20px_rgba(229,9,20,0.3)]">
         START FREE TRIAL
-      </button>
+      </Link>
     </nav>
   );
 }
