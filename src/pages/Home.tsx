@@ -151,24 +151,6 @@ const LOGO_LIST = [
   NetworkLogos.MTV,
 ];
 
-const SPORTS_ROW_1 = [
-  { tag: '🏀 BASKETBALL', title: 'NBA PLAYOFFS', sub: 'Live · Every Game', color: 'from-orange-600/20 to-orange-900/40', category: 'Basketball' },
-  { tag: '🚴 CYCLING', title: 'GIRO D\'ITALIA', sub: 'Eurosport · Live Coverage', color: 'from-pink-600/20 to-pink-900/40', category: 'Cycling' },
-  { tag: '🎾 TENNIS', title: 'ROLAND GARROS', sub: 'Grand Slam · Live', color: 'from-green-600/20 to-green-900/40', category: 'Tennis' },
-  { tag: '🏀 BASKETBALL', title: 'NBA SEASON 25-26', sub: 'ESPN · NBC · Prime · Live', color: 'from-blue-600/20 to-blue-900/40', category: 'Basketball' },
-  { tag: '⚽ FOOTBALL', title: 'PREMIER LEAGUE', sub: 'All Matches · Live', color: 'from-purple-600/20 to-purple-900/40', category: 'Football' },
-  { tag: '🏉 RUGBY', title: 'INTERNATIONAL RUGBY', sub: 'Live · HD Stream', color: 'from-red-600/20 to-red-900/40', category: 'Rugby' },
-];
-
-const SPORTS_ROW_2 = [
-  { tag: '🥊 BOXING', title: 'LIGHTWEIGHT CHAMPIONSHIP', sub: 'Live PPV Events', color: 'from-yellow-600/20 to-yellow-900/40', category: 'Boxing' },
-  { tag: '🏀 BASKETBALL', title: 'INTERNATIONAL BASKETBALL', sub: 'FIBA · Live', color: 'from-sky-600/20 to-sky-900/40', category: 'Basketball' },
-  { tag: '🏀 NBA', title: 'ANTHONY EDWARDS', sub: 'Minnesota Timberwolves', color: 'from-emerald-600/20 to-emerald-900/40', category: 'Basketball' },
-  { tag: '🏏 CRICKET', title: 'IPL CRICKET', sub: 'Mumbai Indians · Live', color: 'from-indigo-600/20 to-indigo-900/40', category: 'Cricket' },
-  { tag: '🥋 UFC / MMA', title: 'UFC MIDDLEWEIGHT', sub: 'Du Plessis vs Chimaev', color: 'from-slate-600/20 to-slate-900/40', category: 'UFC' },
-  { tag: '⚽ FOOTBALL', title: 'UEFA CHAMPIONS LEAGUE', sub: 'UCL 2026 · Live', color: 'from-red-600/20 to-red-900/40', category: 'Football' },
-];
-
 const FEATURES = [
   { icon: <Headphones className="w-6 h-6 text-brand" />, title: '24/7 Live Support', desc: 'Expert help via WhatsApp or Live Chat, any time of day.' },
   { icon: <ShieldCheck className="w-6 h-6 text-brand" />, title: '14-Day Money-Back', desc: 'Full refund, no questions asked, within 14 days.' },
@@ -395,70 +377,6 @@ export default function Home() {
                 <div key={i} className="inline-flex items-center justify-center min-w-[200px] h-[90px] mx-8 bg-[#111111] rounded-xl border border-[#222222] px-8 py-3 shrink-0">
                   <Logo />
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sports Coverage Section */}
-      <section className="py-[80px] bg-gradient-to-b from-[#0A0A0F] via-[#0F0F1A] to-[#0A0A0F] overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 text-center mb-12">
-          <span className="text-[11px] tracking-[4px] text-brand font-bold uppercase block mb-4">LIVE SPORTS COVERAGE</span>
-          <h2 className="text-[52px] font-bebas text-white mb-2 leading-none">Never Miss a Single Match</h2>
-          <p className="text-[17px] text-[#999] max-w-2xl mx-auto">Stream every sport, every event, every moment — live and on-demand</p>
-        </div>
-
-        {/* Gallery Rows */}
-        <div className="flex flex-col gap-[20px]">
-          {/* Row 1 */}
-          <div className="relative w-full overflow-hidden" 
-               style={{ 
-                 WebkitMask: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
-                 mask: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)'
-               }}>
-            <div className="flex w-max animate-scroll-row-1 gap-[16px] pb-5">
-              {[...SPORTS_ROW_1, ...SPORTS_ROW_1].map((card, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ scale: 1.04, boxShadow: '0 8px 32px rgba(229,9,20,0.4)', borderColor: '#E50914' }}
-                  className={`relative w-[220px] h-[330px] rounded-[16px] overflow-hidden flex-shrink-0 cursor-pointer border border-transparent transition-all duration-350 bg-gradient-to-br ${card.color}`}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
-                  <div className="absolute top-0 left-0 bg-brand text-white text-[10px] font-bold tracking-[1.5px] px-2.5 py-1 rounded-br-[8px] uppercase">
-                    {card.tag}
-                  </div>
-                  <div className="absolute bottom-[16px] left-[16px] right-[16px]">
-                    <h4 className="text-[16px] font-black font-bebas text-white tracking-[1px] leading-tight uppercase">{card.title}</h4>
-                    <p className="text-[11px] text-[#AAA] mt-1">{card.sub}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-
-          {/* Row 2 */}
-          <div className="relative w-full overflow-hidden"
-               style={{ 
-                 WebkitMask: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)',
-                 mask: 'linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)'
-               }}>
-            <div className="flex w-max animate-scroll-row-2 gap-[16px] pb-5">
-              {[...SPORTS_ROW_2, ...SPORTS_ROW_2].map((card, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ scale: 1.04, boxShadow: '0 8px 32px rgba(229,9,20,0.4)', borderColor: '#E50914' }}
-                  className={`relative w-[220px] h-[330px] rounded-[16px] overflow-hidden flex-shrink-0 cursor-pointer border border-transparent transition-all duration-350 bg-gradient-to-br ${card.color}`}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
-                  <div className="absolute top-0 left-0 bg-brand text-white text-[10px] font-bold tracking-[1.5px] px-2.5 py-1 rounded-br-[8px] uppercase">
-                    {card.tag}
-                  </div>
-                  <div className="absolute bottom-[16px] left-[16px] right-[16px]">
-                    <h4 className="text-[16px] font-black font-bebas text-white tracking-[1px] leading-tight uppercase">{card.title}</h4>
-                    <p className="text-[11px] text-[#AAA] mt-1">{card.sub}</p>
-                  </div>
-                </motion.div>
               ))}
             </div>
           </div>
@@ -716,18 +634,8 @@ export default function Home() {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
-        @keyframes scrollLeft {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
         .animate-marquee {
           animation: marquee 30s linear infinite;
-        }
-        .animate-scroll-row-1 {
-          animation: scrollLeft 35s linear infinite;
-        }
-        .animate-scroll-row-2 {
-          animation: scrollLeft 28s linear infinite;
         }
       `}</style>
 
