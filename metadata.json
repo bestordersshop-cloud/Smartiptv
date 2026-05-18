@@ -1,0 +1,6 @@
+{
+  "name": "StreamVault",
+  "description": "Premium IPTV streaming service landing page featuring 18,000+ live channels, 80,000+ movies & shows, 4K Ultra HD quality, and zero buffering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
